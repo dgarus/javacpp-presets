@@ -104,6 +104,9 @@ sedinplace 's/find_opencl(${USE_OPENCL})/find_package(OpenCL REQUIRED)/g' cmake/
 # https://github.com/apache/tvm/pull/6752
 #patch -Np1 < ../../../tvm.patch
 
+# https://github.com/apache/tvm/pull/17199
+patch -Np1 < ../../../tvm-llvm.patch
+
 patch -Np1 < ../../../tvm-python.patch
 
 # Work around issues with llvm-config
