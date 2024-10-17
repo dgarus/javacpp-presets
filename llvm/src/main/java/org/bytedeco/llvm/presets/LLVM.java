@@ -40,7 +40,7 @@ import org.bytedeco.javacpp.tools.*;
                "<llvm-c/Transforms/PassBuilder.h>", "<polly/LinkAllPasses.h>", "<FullOptimization.h>", "<NamedMetadataOperations.h>", "<TargetStubs.h>"},
     compiler = "cpp17", link = {"LLVM@.19.1", "LTO@.19.1", "Remarks@.19.1"}, resource = {"include", "lib", "libexec", "share"}),
         @Platform(value = "macosx", link = {"LLVM", "LTO", "Remarks"}),
-        @Platform(value = "windows", link = {"Ws2_32", "LLVM", "LTO", "Remarks"})})
+        @Platform(value = "windows", link = {"ntdll", "Ws2_32", "LLVM", "LTO", "Remarks"})})
 @NoException
 public class LLVM implements InfoMapper {
     static { Loader.checkVersion("org.bytedeco", "llvm"); }

@@ -372,7 +372,7 @@ public class python implements InfoMapper {
                .put(new Info("PyThreadFrameGetter", "jmp_buf", "_PyInterpreterFrame", "_stack_chunk", "_PyExecutorObject").cast().pointerTypes("Pointer"))
 
                .put(new Info("_Py_memory_order", "PyThreadState::_preserve_36_ABI_1", "PyThreadState::_preserve_36_ABI_2",
-                             "_PyGC_generation0", "_PyBytes_InsertThousandsGroupingLocale",
+                             "_PyGC_generation0", "_PyBytes_InsertThousandsGroupingLocale","_PyTrash_begin", "_PyTrash_end",
                              "_PyBytes_InsertThousandsGrouping", "_PyUnicode_DecodeUnicodeInternal",
                              "_PyFloat_Repr", "_PyFloat_Digits", "_PyFloat_DigitsInit", "_PyErr_SetImportErrorWithNameFrom",
                              "PySortWrapper_Type", "PyCmpWrapper_Type", "_PyGen_yf", "_PyAIterWrapper_New",

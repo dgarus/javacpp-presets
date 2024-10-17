@@ -179,7 +179,7 @@ case $PLATFORM in
         cp win32/*.dll win32/*.pyd ../../lib/
         cd ..
         cp -r Lib/* ../lib/
-        cp -r Include/* PC/pyconfig.h ../include/
+        cp -r Include/* PCbuild/win32/pyconfig.h ../include/
         unzip -o ../lib/ensurepip/_bundled/pip* -d ../lib/
         # unzip -o ../lib/ensurepip/_bundled/setuptools* -d ../lib/
         ;;
@@ -192,7 +192,7 @@ case $PLATFORM in
         cp amd64/*.dll amd64/*.pyd ../../lib/
         cd ..
         cp -r Lib/* ../lib/
-        cp -r Include/* PC/pyconfig.h ../include/
+        cp -r Include/* PCbuild/amd64/pyconfig.h ../include/
         unzip -o ../lib/ensurepip/_bundled/pip* -d ../lib/
         # unzip -o ../lib/ensurepip/_bundled/setuptools* -d ../lib/
         ;;

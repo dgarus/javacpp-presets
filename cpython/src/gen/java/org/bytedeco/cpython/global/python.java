@@ -4692,8 +4692,8 @@ passed as second argument to Py_TRASHCAN_BEGIN().
 */
 
 /* Python 3.9 private API, invoked by the macros below. */
-@NoException public static native int _PyTrash_begin(PyThreadState tstate, PyObject op);
-@NoException public static native void _PyTrash_end(PyThreadState tstate);
+
+
 
 @NoException public static native void _PyTrash_thread_deposit_object(PyThreadState tstate, PyObject op);
 @NoException public static native void _PyTrash_thread_destroy_chain(PyThreadState tstate);
