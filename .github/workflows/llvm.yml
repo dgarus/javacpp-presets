@@ -20,12 +20,12 @@ jobs:
   linux-x86_64:
     runs-on: ubuntu-20.04
     steps:
-      - uses: dgarus/javacpp-presets/.github/actions/deploy-ubuntu/action.yml@ubuntu-18
+      - uses: dgarus/javacpp-presets/.github/actions/deploy-ubuntu/action.yml@action
   redeploy:
     needs: linux-x86_64
     runs-on: ubuntu-20.04
     steps:
-      - uses: dgarus/javacpp-presets/.github/actions/redeploy/action.yml@ubuntu-18
+      - uses: dgarus/javacpp-presets/.github/actions/deploy-ubuntu/action.yml@action
   samples:
     needs: redeploy
     runs-on: ubuntu-20.04
