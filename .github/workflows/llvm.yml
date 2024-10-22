@@ -20,12 +20,12 @@ jobs:
   linux-x86_64:
     runs-on: ubuntu-20.04
     steps:
-      - uses: bytedeco/javacpp-presets/.github/actions/deploy-ubuntu@actions
+      - uses: dgarus/javacpp-presets/.github/actions/deploy-ubuntu@my-actions
   redeploy:
     needs: linux-x86_64
     runs-on: ubuntu-20.04
     steps:
-      - uses: bytedeco/javacpp-presets/.github/actions/redeploy@actions
+      - uses: dgarus/javacpp-presets/.github/actions/redeploy@my-actions
   samples:
     needs: redeploy
     runs-on: ubuntu-20.04
