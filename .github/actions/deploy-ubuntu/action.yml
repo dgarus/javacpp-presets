@@ -7,6 +7,9 @@ runs:
       env:
         GITHUB_EVENT_HEAD_COMMIT_MESSAGE: ${{ github.event.head_commit.message }}
       run: |
+        
+        echo "MY_DEBUG Install environment"
+        
         export SUDO=$(which sudo)
         echo "SUDO=$SUDO" >> $GITHUB_ENV
         if [[ -z "$SUDO" ]]; then
@@ -287,6 +290,9 @@ runs:
     - name: Build project
       shell: bash
       run: |
+        
+        echo "MY_DEBUG Build project"
+        
         git --version
         $PREFIX-gcc --version
         cmake --version
@@ -339,5 +345,8 @@ runs:
     - name: Clean up
       shell: bash
       run: |
+        
+        echo "MY_DEBUG Clean up"
+        
         cd $HOME
         rm -Rf $(find .m2/repository/ -name '*SNAPSHOT*')
